@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FA1CCB4527E0F11C00F80986 /* Project_prototypeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CCB4427E0F11C00F80986 /* Project_prototypeApp.swift */; };
-		FA1CCB4727E0F11C00F80986 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CCB4627E0F11C00F80986 /* ContentView.swift */; };
+		FA1CCB4727E0F11C00F80986 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CCB4627E0F11C00F80986 /* UserView.swift */; };
 		FA1CCB4927E0F12100F80986 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA1CCB4827E0F12000F80986 /* Assets.xcassets */; };
 		FA1CCB4C27E0F12100F80986 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA1CCB4B27E0F12100F80986 /* Preview Assets.xcassets */; };
 		FA1CCB4E27E0F12100F80986 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CCB4D27E0F12100F80986 /* Persistence.swift */; };
@@ -17,6 +17,8 @@
 		FA1CCB6527E0F12200F80986 /* Project_prototypeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CCB6427E0F12200F80986 /* Project_prototypeUITests.swift */; };
 		FA1CCB6727E0F12200F80986 /* Project_prototypeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CCB6627E0F12200F80986 /* Project_prototypeUITestsLaunchTests.swift */; };
 		FA1CCB7527E142D600F80986 /* Resizing Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CCB7427E142D500F80986 /* Resizing Functions.swift */; };
+		FA1CCB7927E24A8100F80986 /* TopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CCB7827E24A8100F80986 /* TopView.swift */; };
+		FA1CCB7B27E24C3A00F80986 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CCB7A27E24C3A00F80986 /* SwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +41,7 @@
 /* Begin PBXFileReference section */
 		FA1CCB4127E0F11C00F80986 /* Project prototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project prototype.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA1CCB4427E0F11C00F80986 /* Project_prototypeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project_prototypeApp.swift; sourceTree = "<group>"; };
-		FA1CCB4627E0F11C00F80986 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FA1CCB4627E0F11C00F80986 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
 		FA1CCB4827E0F12000F80986 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA1CCB4B27E0F12100F80986 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FA1CCB4D27E0F12100F80986 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -50,6 +52,8 @@
 		FA1CCB6427E0F12200F80986 /* Project_prototypeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project_prototypeUITests.swift; sourceTree = "<group>"; };
 		FA1CCB6627E0F12200F80986 /* Project_prototypeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project_prototypeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FA1CCB7427E142D500F80986 /* Resizing Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resizing Functions.swift"; sourceTree = "<group>"; };
+		FA1CCB7827E24A8100F80986 /* TopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopView.swift; sourceTree = "<group>"; };
+		FA1CCB7A27E24C3A00F80986 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +106,7 @@
 			children = (
 				FA1CCB7327E142AB00F80986 /* Common */,
 				FA1CCB4427E0F11C00F80986 /* Project_prototypeApp.swift */,
-				FA1CCB4627E0F11C00F80986 /* ContentView.swift */,
+				FA1CCB7627E249BF00F80986 /* UserPage */,
 				FA1CCB4827E0F12000F80986 /* Assets.xcassets */,
 				FA1CCB4D27E0F12100F80986 /* Persistence.swift */,
 				FA1CCB4F27E0F12100F80986 /* Project_prototype.xcdatamodeld */,
@@ -142,6 +146,24 @@
 				FA1CCB7427E142D500F80986 /* Resizing Functions.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		FA1CCB7627E249BF00F80986 /* UserPage */ = {
+			isa = PBXGroup;
+			children = (
+				FA1CCB4627E0F11C00F80986 /* UserView.swift */,
+				FA1CCB7727E24A6200F80986 /* SubViews */,
+			);
+			path = UserPage;
+			sourceTree = "<group>";
+		};
+		FA1CCB7727E24A6200F80986 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				FA1CCB7827E24A8100F80986 /* TopView.swift */,
+				FA1CCB7A27E24C3A00F80986 /* SwiftUIView.swift */,
+			);
+			path = SubViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,7 +297,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA1CCB4E27E0F12100F80986 /* Persistence.swift in Sources */,
-				FA1CCB4727E0F11C00F80986 /* ContentView.swift in Sources */,
+				FA1CCB7B27E24C3A00F80986 /* SwiftUIView.swift in Sources */,
+				FA1CCB7927E24A8100F80986 /* TopView.swift in Sources */,
+				FA1CCB4727E0F11C00F80986 /* UserView.swift in Sources */,
 				FA1CCB7527E142D600F80986 /* Resizing Functions.swift in Sources */,
 				FA1CCB5127E0F12100F80986 /* Project_prototype.xcdatamodeld in Sources */,
 				FA1CCB4527E0F11C00F80986 /* Project_prototypeApp.swift in Sources */,

@@ -1,35 +1,14 @@
 //
-//  ContentView.swift
+//  File.swift
 //  Project prototype
 //
-//  Created by MacBook on 15.03.2022.
+//  Created by MacBook on 16.03.2022.
 //
 
 import SwiftUI
-import CoreData
-
-struct ContentView: View {
-    
-    var body: some View {
-        VStack {
-            TopView()
-            
-            
-            
-            Spacer()
-        }
-    }
-    
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
 
 struct TopView: View {
-    
+
     let gradient = Gradient(colors: [.black,.white])
 
     var body: some View {

@@ -11,9 +11,15 @@ struct UserView: View {
     
     var body: some View {
         VStack {
-            TopView()
-            SubscribeButton()
-                .padding(.top, 20)
+            ZStack {
+                RoundedRectangle(cornerRadius: 25)
+                    .fill(Color("SubBackground"))
+                    .overlay(TopView())
+                    .padding(0)
+            }
+            .frame(width:Get_Width(w: 0.95), height: Get_Height(h: 0.3))
+            .ignoresSafeArea()
+            .padding()
             
             Spacer()
         }

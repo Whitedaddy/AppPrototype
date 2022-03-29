@@ -19,7 +19,17 @@ struct UserView: View {
             }
             .frame(width:Get_Width(w: 0.95), height: Get_Height(h: 0.3))
             .ignoresSafeArea()
-            .padding()
+            .padding(.top)
+            
+            ZStack {
+                RoundedRectangle(cornerRadius: 25)
+                    .fill(Color("SubBackground"))
+                    .overlay(StoriesView())
+                    .padding(0)
+            }
+            .frame(width:Get_Width(w: 0.95), height: Get_Height(h: 0.12))
+            .ignoresSafeArea()
+            .padding(.top, 5)
             
             Spacer()
         }

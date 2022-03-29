@@ -10,7 +10,7 @@ import SwiftUI
 
 struct CirclePhoto: View
 {
-    let gradient = Gradient(colors: [.white,.pink])
+    let size: CGFloat
     var avatar: Image
     var body: some View
     {
@@ -24,6 +24,12 @@ struct CirclePhoto: View
                 .overlay(Circle().stroke(Color.purple, lineWidth: 1))
                 .foregroundColor(.white)
         }
-        .frame(width: Get_Height(h: 0.12), height: Get_Height(h: 0.12))
+        .frame(width: Get_Height(h: size), height: Get_Height(h: size))
+    }
+}
+
+struct CirclePhoto_Previews: PreviewProvider {
+    static var previews: some View {
+        CirclePhoto(size: 0.1, avatar: Image(systemName: "star"))
     }
 }

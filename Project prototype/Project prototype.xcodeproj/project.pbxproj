@@ -23,6 +23,9 @@
 		FA6CCCF427EBB49C00882A00 /* GeoInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CCCF327EBB49C00882A00 /* GeoInfoView.swift */; };
 		FA6CCCF627EBB58C00882A00 /* NameAndSubsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CCCF527EBB58C00882A00 /* NameAndSubsView.swift */; };
 		FA6CCCF827EBB6B900882A00 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CCCF727EBB6B900882A00 /* RatingView.swift */; };
+		FAA8F8A927F39D47006D0118 /* StoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8F8A827F39D47006D0118 /* StoriesView.swift */; };
+		FAA8F8AD27F39DE6006D0118 /* TestApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8F8AC27F39DE6006D0118 /* TestApiRequest.swift */; };
+		FAA8F8B027F3A0A1006D0118 /* CodableData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8F8AF27F3A0A1006D0118 /* CodableData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,9 @@
 		FA6CCCF327EBB49C00882A00 /* GeoInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoInfoView.swift; sourceTree = "<group>"; };
 		FA6CCCF527EBB58C00882A00 /* NameAndSubsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameAndSubsView.swift; sourceTree = "<group>"; };
 		FA6CCCF727EBB6B900882A00 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		FAA8F8A827F39D47006D0118 /* StoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesView.swift; sourceTree = "<group>"; };
+		FAA8F8AC27F39DE6006D0118 /* TestApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestApiRequest.swift; sourceTree = "<group>"; };
+		FAA8F8AF27F3A0A1006D0118 /* CodableData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,7 +120,9 @@
 			children = (
 				FA1CCB7327E142AB00F80986 /* Common */,
 				FA1CCB4427E0F11C00F80986 /* Project_prototypeApp.swift */,
-				FA1CCB7627E249BF00F80986 /* UserPage */,
+				FAA8F8AE27F3A07B006D0118 /* Model */,
+				FAA8F8A427F39C2A006D0118 /* View */,
+				FAA8F8AA27F39D9F006D0118 /* ViewModel */,
 				FA1CCB4827E0F12000F80986 /* Assets.xcassets */,
 				FA1CCB4D27E0F12100F80986 /* Persistence.swift */,
 				FA1CCB4F27E0F12100F80986 /* Project_prototype.xcdatamodeld */,
@@ -159,8 +167,7 @@
 		FA1CCB7627E249BF00F80986 /* UserPage */ = {
 			isa = PBXGroup;
 			children = (
-				FA1CCB4627E0F11C00F80986 /* UserView.swift */,
-				FA1CCB7727E24A6200F80986 /* SubViews */,
+				FAA8F8A627F39CF9006D0118 /* UserView */,
 			);
 			path = UserPage;
 			sourceTree = "<group>";
@@ -169,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				FA6CCCEF27EBB3F700882A00 /* DescribingView */,
+				FAA8F8A727F39D08006D0118 /* StoriesView */,
 			);
 			path = SubViews;
 			sourceTree = "<group>";
@@ -185,13 +193,70 @@
 		FA6CCCF027EBB41100882A00 /* Elements */ = {
 			isa = PBXGroup;
 			children = (
-				FA6CCCF127EBB43700882A00 /* CirclePhoto.swift */,
 				FA6CCCF327EBB49C00882A00 /* GeoInfoView.swift */,
 				FA6CCCF527EBB58C00882A00 /* NameAndSubsView.swift */,
 				FA6CCCF727EBB6B900882A00 /* RatingView.swift */,
 				FA1CCB7A27E24C3A00F80986 /* Buttons.swift */,
 			);
 			path = Elements;
+			sourceTree = "<group>";
+		};
+		FAA8F8A427F39C2A006D0118 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FAA8F8A527F39C43006D0118 /* CommonSubViews */,
+				FA1CCB7627E249BF00F80986 /* UserPage */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FAA8F8A527F39C43006D0118 /* CommonSubViews */ = {
+			isa = PBXGroup;
+			children = (
+				FA6CCCF127EBB43700882A00 /* CirclePhoto.swift */,
+			);
+			path = CommonSubViews;
+			sourceTree = "<group>";
+		};
+		FAA8F8A627F39CF9006D0118 /* UserView */ = {
+			isa = PBXGroup;
+			children = (
+				FA1CCB4627E0F11C00F80986 /* UserView.swift */,
+				FA1CCB7727E24A6200F80986 /* SubViews */,
+			);
+			path = UserView;
+			sourceTree = "<group>";
+		};
+		FAA8F8A727F39D08006D0118 /* StoriesView */ = {
+			isa = PBXGroup;
+			children = (
+				FAA8F8A827F39D47006D0118 /* StoriesView.swift */,
+			);
+			path = StoriesView;
+			sourceTree = "<group>";
+		};
+		FAA8F8AA27F39D9F006D0118 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FAA8F8AB27F39DB6006D0118 /* NetworkLayer */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FAA8F8AB27F39DB6006D0118 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				FAA8F8AC27F39DE6006D0118 /* TestApiRequest.swift */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		FAA8F8AE27F3A07B006D0118 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FAA8F8AF27F3A0A1006D0118 /* CodableData.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,6 +391,9 @@
 			files = (
 				FA6CCCF827EBB6B900882A00 /* RatingView.swift in Sources */,
 				FA6CCCF227EBB43700882A00 /* CirclePhoto.swift in Sources */,
+				FAA8F8A927F39D47006D0118 /* StoriesView.swift in Sources */,
+				FAA8F8AD27F39DE6006D0118 /* TestApiRequest.swift in Sources */,
+				FAA8F8B027F3A0A1006D0118 /* CodableData.swift in Sources */,
 				FA1CCB4E27E0F12100F80986 /* Persistence.swift in Sources */,
 				FA6CCCF627EBB58C00882A00 /* NameAndSubsView.swift in Sources */,
 				FA1CCB7B27E24C3A00F80986 /* Buttons.swift in Sources */,

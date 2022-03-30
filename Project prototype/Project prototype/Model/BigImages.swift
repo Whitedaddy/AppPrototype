@@ -7,16 +7,17 @@
 
 import Foundation
 
-struct SearchedImages: Decodable {
+
+
+//MARK: model to download BigSize Images
+struct BigImages: Decodable {
     var total: Int
     var totalHits: Int
-    var hits: [Hit]
+    var hits: [BigImage]
 }
 
-struct Hit: Decodable {
+struct BigImage: Decodable, Identifiable, Hashable {
     let id: Int
     let pageURL: String
     let tags: String
-    let webformatURL: String
-
 }

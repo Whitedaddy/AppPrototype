@@ -9,6 +9,8 @@ import SwiftUI
 
 struct UserView: View {
     
+    @ObservedObject var networkCall = ImageDownloader()
+    
     var body: some View {
         ScrollView(.vertical, showsIndicators: true) {
             VStack {

@@ -12,6 +12,7 @@ struct Project_prototypeApp: App {
     var body: some Scene {
         WindowGroup {
             UserView()
+//            FastView()
         }
     }
 }

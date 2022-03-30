@@ -8,12 +8,16 @@
 import SwiftUI
 
 struct LentaView: View {
+    
+    @ObservedObject var network = ImageDownloader()
+
     var body: some View {
         VStack {
-            ForEach ((1...10), id: \.self) {text in
-                PostView(like: nil, subscription: String(text))
+            ForEach (network.images) {text in
+                PostView(hit: text)
             }
         }
+        .onAppear(perform: {network.GetImages(searh: "flowers", page: 1)})
     }
 }
 

@@ -26,5 +26,7 @@ struct StoriesView: View {
 struct StoriesView_Previews: PreviewProvider {
     static var previews: some View {
         StoriesView()
+            .padding()
+            .previewLayout(.sizeThatFits)
     }
 }

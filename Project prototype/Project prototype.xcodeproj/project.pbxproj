@@ -25,10 +25,11 @@
 		FA6CCCF827EBB6B900882A00 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CCCF727EBB6B900882A00 /* RatingView.swift */; };
 		FAA8F8A927F39D47006D0118 /* StoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8F8A827F39D47006D0118 /* StoriesView.swift */; };
 		FAA8F8AD27F39DE6006D0118 /* TestApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8F8AC27F39DE6006D0118 /* TestApiRequest.swift */; };
-		FAA8F8B027F3A0A1006D0118 /* CodableData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8F8AF27F3A0A1006D0118 /* CodableData.swift */; };
+		FAA8F8B027F3A0A1006D0118 /* BigImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8F8AF27F3A0A1006D0118 /* BigImages.swift */; };
 		FAA8F8B327F4C5B6006D0118 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8F8B227F4C5B6006D0118 /* PostView.swift */; };
 		FAA8F8B527F4C880006D0118 /* FastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8F8B427F4C880006D0118 /* FastView.swift */; };
 		FAA8F8B827F4D046006D0118 /* LentaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8F8B727F4D046006D0118 /* LentaView.swift */; };
+		FAA8F8BA27F50DF8006D0118 /* SmallImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8F8B927F50DF8006D0118 /* SmallImages.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,10 +71,11 @@
 		FA6CCCF727EBB6B900882A00 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		FAA8F8A827F39D47006D0118 /* StoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesView.swift; sourceTree = "<group>"; };
 		FAA8F8AC27F39DE6006D0118 /* TestApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestApiRequest.swift; sourceTree = "<group>"; };
-		FAA8F8AF27F3A0A1006D0118 /* CodableData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableData.swift; sourceTree = "<group>"; };
+		FAA8F8AF27F3A0A1006D0118 /* BigImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigImages.swift; sourceTree = "<group>"; };
 		FAA8F8B227F4C5B6006D0118 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		FAA8F8B427F4C880006D0118 /* FastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastView.swift; sourceTree = "<group>"; };
 		FAA8F8B727F4D046006D0118 /* LentaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LentaView.swift; sourceTree = "<group>"; };
+		FAA8F8B927F50DF8006D0118 /* SmallImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallImages.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,15 +126,15 @@
 		FA1CCB4327E0F11C00F80986 /* Project prototype */ = {
 			isa = PBXGroup;
 			children = (
-				FAA8F8B427F4C880006D0118 /* FastView.swift */,
-				FA1CCB7327E142AB00F80986 /* Common */,
 				FA1CCB4427E0F11C00F80986 /* Project_prototypeApp.swift */,
+				FA1CCB7327E142AB00F80986 /* Common */,
 				FAA8F8AE27F3A07B006D0118 /* Model */,
 				FAA8F8A427F39C2A006D0118 /* View */,
 				FAA8F8AA27F39D9F006D0118 /* ViewModel */,
 				FA1CCB4827E0F12000F80986 /* Assets.xcassets */,
 				FA1CCB4D27E0F12100F80986 /* Persistence.swift */,
 				FA1CCB4F27E0F12100F80986 /* Project_prototype.xcdatamodeld */,
+				FAA8F8B427F4C880006D0118 /* FastView.swift */,
 				FA1CCB4A27E0F12100F80986 /* Preview Content */,
 			);
 			path = "Project prototype";
@@ -262,7 +264,8 @@
 		FAA8F8AE27F3A07B006D0118 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				FAA8F8AF27F3A0A1006D0118 /* CodableData.swift */,
+				FAA8F8AF27F3A0A1006D0118 /* BigImages.swift */,
+				FAA8F8B927F50DF8006D0118 /* SmallImages.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -420,7 +423,8 @@
 				FAA8F8B827F4D046006D0118 /* LentaView.swift in Sources */,
 				FAA8F8A927F39D47006D0118 /* StoriesView.swift in Sources */,
 				FAA8F8AD27F39DE6006D0118 /* TestApiRequest.swift in Sources */,
-				FAA8F8B027F3A0A1006D0118 /* CodableData.swift in Sources */,
+				FAA8F8B027F3A0A1006D0118 /* BigImages.swift in Sources */,
+				FAA8F8BA27F50DF8006D0118 /* SmallImages.swift in Sources */,
 				FA1CCB4E27E0F12100F80986 /* Persistence.swift in Sources */,
 				FA6CCCF627EBB58C00882A00 /* NameAndSubsView.swift in Sources */,
 				FA1CCB7B27E24C3A00F80986 /* Buttons.swift in Sources */,

@@ -11,8 +11,12 @@ struct StoriesView: View {
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack {
+                
+                CirclePhoto(size: 0.09, avatar: Image(systemName: "plus.circle"), color: .purple, border: 2)
+                
                 ForEach((1...10), id: \.self) {_ in
-                    CirclePhoto(size: 0.1, avatar: Image(systemName: "star"))
+                    CirclePhoto(size: 0.09, avatar: Image("ImagePlaceholder"), color: .purple, border: 3)
+                        .padding(.vertical)
                 }
             }
         }

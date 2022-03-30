@@ -19,7 +19,7 @@ struct TopView: View {
                 Spacer()
             }
             VStack {
-                CirclePhoto(size: 0.12, avatar: Image(systemName: "person.crop.circle.fill"))
+                CirclePhoto(size: 0.12, avatar: Image(systemName: "person.crop.circle.fill"), color: .white, border: 3)
                 HStack {
                     GeoInfoView()
                     NameAndSubsView()

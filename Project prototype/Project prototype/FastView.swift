@@ -1,16 +1,13 @@
 //
-//  CirclePhoto.swift
+//  FastView.swift
 //  Project prototype
 //
-//  Created by MacBook on 23.03.2022.
+//  Created by MacBook on 30.03.2022.
 //
 
 import SwiftUI
 
-
-struct CirclePhoto: View
-{
-    
+struct FastView: View {
     let size: CGFloat
     let avatar: Image
     let color: Color
@@ -20,20 +17,20 @@ struct CirclePhoto: View
     {
         ZStack
         {
-//            Circle()
-//                .fill(RadialGradient(colors: [.purple,.white], center: .center, startRadius: 0, endRadius: 100))
+            Circle()
+                .fill(RadialGradient(colors: [.purple,.white], center: .center, startRadius: 0, endRadius: 100))
             avatar
                 .resizable()
                 .clipShape(Circle())
                 .overlay(Circle().stroke(color, lineWidth: border))
-                .foregroundColor(color)
+                .foregroundColor(.white)
         }
         .frame(width: Get_Height(h: size), height: Get_Height(h: size))
     }
 }
 
-struct CirclePhoto_Previews: PreviewProvider {
+struct FastView_Previews: PreviewProvider {
     static var previews: some View {
-        CirclePhoto(size: 0.1, avatar: Image(systemName: "plus.circle"), color: .purple, border: 2)
+        FastView(size: 0.1, avatar: Image(systemName: "star"), color: .purple, border: 2)
     }
 }

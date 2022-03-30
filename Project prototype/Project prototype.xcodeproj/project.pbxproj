@@ -26,6 +26,9 @@
 		FAA8F8A927F39D47006D0118 /* StoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8F8A827F39D47006D0118 /* StoriesView.swift */; };
 		FAA8F8AD27F39DE6006D0118 /* TestApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8F8AC27F39DE6006D0118 /* TestApiRequest.swift */; };
 		FAA8F8B027F3A0A1006D0118 /* CodableData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8F8AF27F3A0A1006D0118 /* CodableData.swift */; };
+		FAA8F8B327F4C5B6006D0118 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8F8B227F4C5B6006D0118 /* PostView.swift */; };
+		FAA8F8B527F4C880006D0118 /* FastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8F8B427F4C880006D0118 /* FastView.swift */; };
+		FAA8F8B827F4D046006D0118 /* LentaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8F8B727F4D046006D0118 /* LentaView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +71,9 @@
 		FAA8F8A827F39D47006D0118 /* StoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesView.swift; sourceTree = "<group>"; };
 		FAA8F8AC27F39DE6006D0118 /* TestApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestApiRequest.swift; sourceTree = "<group>"; };
 		FAA8F8AF27F3A0A1006D0118 /* CodableData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableData.swift; sourceTree = "<group>"; };
+		FAA8F8B227F4C5B6006D0118 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		FAA8F8B427F4C880006D0118 /* FastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastView.swift; sourceTree = "<group>"; };
+		FAA8F8B727F4D046006D0118 /* LentaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LentaView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +124,7 @@
 		FA1CCB4327E0F11C00F80986 /* Project prototype */ = {
 			isa = PBXGroup;
 			children = (
+				FAA8F8B427F4C880006D0118 /* FastView.swift */,
 				FA1CCB7327E142AB00F80986 /* Common */,
 				FA1CCB4427E0F11C00F80986 /* Project_prototypeApp.swift */,
 				FAA8F8AE27F3A07B006D0118 /* Model */,
@@ -177,6 +184,7 @@
 			children = (
 				FA6CCCEF27EBB3F700882A00 /* DescribingView */,
 				FAA8F8A727F39D08006D0118 /* StoriesView */,
+				FAA8F8B627F4D01B006D0118 /* LentaView */,
 			);
 			path = SubViews;
 			sourceTree = "<group>";
@@ -257,6 +265,23 @@
 				FAA8F8AF27F3A0A1006D0118 /* CodableData.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		FAA8F8B127F4C586006D0118 /* PostView */ = {
+			isa = PBXGroup;
+			children = (
+				FAA8F8B227F4C5B6006D0118 /* PostView.swift */,
+			);
+			path = PostView;
+			sourceTree = "<group>";
+		};
+		FAA8F8B627F4D01B006D0118 /* LentaView */ = {
+			isa = PBXGroup;
+			children = (
+				FAA8F8B727F4D046006D0118 /* LentaView.swift */,
+				FAA8F8B127F4C586006D0118 /* PostView */,
+			);
+			path = LentaView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -391,6 +416,8 @@
 			files = (
 				FA6CCCF827EBB6B900882A00 /* RatingView.swift in Sources */,
 				FA6CCCF227EBB43700882A00 /* CirclePhoto.swift in Sources */,
+				FAA8F8B527F4C880006D0118 /* FastView.swift in Sources */,
+				FAA8F8B827F4D046006D0118 /* LentaView.swift in Sources */,
 				FAA8F8A927F39D47006D0118 /* StoriesView.swift in Sources */,
 				FAA8F8AD27F39DE6006D0118 /* TestApiRequest.swift in Sources */,
 				FAA8F8B027F3A0A1006D0118 /* CodableData.swift in Sources */,
@@ -402,6 +429,7 @@
 				FA6CCCF427EBB49C00882A00 /* GeoInfoView.swift in Sources */,
 				FA1CCB7527E142D600F80986 /* Resizing Functions.swift in Sources */,
 				FA1CCB5127E0F12100F80986 /* Project_prototype.xcdatamodeld in Sources */,
+				FAA8F8B327F4C5B6006D0118 /* PostView.swift in Sources */,
 				FA1CCB4527E0F11C00F80986 /* Project_prototypeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

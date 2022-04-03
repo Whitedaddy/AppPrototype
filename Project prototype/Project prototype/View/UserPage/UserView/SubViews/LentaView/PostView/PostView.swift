@@ -9,14 +9,12 @@ import SwiftUI
 
 struct PostView: View {
     
-    @ObservedObject var network = ImageDownloader()
     var hit: BigImage
     
     var body: some View {
         ZStack {
-            Image("ImagePlaceholder")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
+            PosViewImage(url: hit.webformatURL)
+                
             VStack {
                 Spacer()
                 VStack {
@@ -36,8 +34,10 @@ struct PostView: View {
     }
 }
 
+
+
 struct PostView_Previews: PreviewProvider {
     static var previews: some View {
-        PostView(hit: BigImage(id: 0, pageURL: "", tags: ""))
+        PostView(hit: BigImage(id: 0, pageURL: "", tags: "hello", webformatURL: "https://pixabay.com/get/g7e8ebf4ac14fe4a9953f99c0e0d1e0458ebff544847ac7c19f57e01f23290d85f10454c7a26c7174587d7ea9897f3673_640.jpg"))
     }
 }

@@ -19,6 +19,9 @@
 		FA1CCB7527E142D600F80986 /* Resizing Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CCB7427E142D500F80986 /* Resizing Functions.swift */; };
 		FA1CCB7927E24A8100F80986 /* TopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CCB7827E24A8100F80986 /* TopView.swift */; };
 		FA1CCB7B27E24C3A00F80986 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CCB7A27E24C3A00F80986 /* Buttons.swift */; };
+		FA68A14127FA24F700110AD5 /* StorieCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA68A14027FA24F700110AD5 /* StorieCircleView.swift */; };
+		FA68A14327FA267900110AD5 /* SingleStorieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA68A14227FA267900110AD5 /* SingleStorieView.swift */; };
+		FA68A14527FA292C00110AD5 /* AddStoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA68A14427FA292C00110AD5 /* AddStoriesView.swift */; };
 		FA6CCCF227EBB43700882A00 /* CirclePhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CCCF127EBB43700882A00 /* CirclePhoto.swift */; };
 		FA6CCCF427EBB49C00882A00 /* GeoInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CCCF327EBB49C00882A00 /* GeoInfoView.swift */; };
 		FA6CCCF627EBB58C00882A00 /* NameAndSubsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CCCF527EBB58C00882A00 /* NameAndSubsView.swift */; };
@@ -30,6 +33,8 @@
 		FAA8F8B527F4C880006D0118 /* FastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8F8B427F4C880006D0118 /* FastView.swift */; };
 		FAA8F8B827F4D046006D0118 /* LentaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8F8B727F4D046006D0118 /* LentaView.swift */; };
 		FAA8F8BA27F50DF8006D0118 /* SmallImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8F8B927F50DF8006D0118 /* SmallImages.swift */; };
+		FAA8F8BC27F7166B006D0118 /* PosViewImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8F8BB27F7166A006D0118 /* PosViewImage.swift */; };
+		FAA8F8BE27F71821006D0118 /* SingleImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8F8BD27F71820006D0118 /* SingleImageDownloader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +70,9 @@
 		FA1CCB7427E142D500F80986 /* Resizing Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resizing Functions.swift"; sourceTree = "<group>"; };
 		FA1CCB7827E24A8100F80986 /* TopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopView.swift; sourceTree = "<group>"; };
 		FA1CCB7A27E24C3A00F80986 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+		FA68A14027FA24F700110AD5 /* StorieCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorieCircleView.swift; sourceTree = "<group>"; };
+		FA68A14227FA267900110AD5 /* SingleStorieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleStorieView.swift; sourceTree = "<group>"; };
+		FA68A14427FA292C00110AD5 /* AddStoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStoriesView.swift; sourceTree = "<group>"; };
 		FA6CCCF127EBB43700882A00 /* CirclePhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CirclePhoto.swift; sourceTree = "<group>"; };
 		FA6CCCF327EBB49C00882A00 /* GeoInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoInfoView.swift; sourceTree = "<group>"; };
 		FA6CCCF527EBB58C00882A00 /* NameAndSubsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameAndSubsView.swift; sourceTree = "<group>"; };
@@ -76,6 +84,8 @@
 		FAA8F8B427F4C880006D0118 /* FastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastView.swift; sourceTree = "<group>"; };
 		FAA8F8B727F4D046006D0118 /* LentaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LentaView.swift; sourceTree = "<group>"; };
 		FAA8F8B927F50DF8006D0118 /* SmallImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallImages.swift; sourceTree = "<group>"; };
+		FAA8F8BB27F7166A006D0118 /* PosViewImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosViewImage.swift; sourceTree = "<group>"; };
+		FAA8F8BD27F71820006D0118 /* SingleImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleImageDownloader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +201,16 @@
 			path = SubViews;
 			sourceTree = "<group>";
 		};
+		FA68A14627FA294B00110AD5 /* StorieView */ = {
+			isa = PBXGroup;
+			children = (
+				FA68A14427FA292C00110AD5 /* AddStoriesView.swift */,
+				FA68A14227FA267900110AD5 /* SingleStorieView.swift */,
+				FA68A14027FA24F700110AD5 /* StorieCircleView.swift */,
+			);
+			path = StorieView;
+			sourceTree = "<group>";
+		};
 		FA6CCCEF27EBB3F700882A00 /* DescribingView */ = {
 			isa = PBXGroup;
 			children = (
@@ -241,6 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				FAA8F8A827F39D47006D0118 /* StoriesView.swift */,
+				FA68A14627FA294B00110AD5 /* StorieView */,
 			);
 			path = StoriesView;
 			sourceTree = "<group>";
@@ -257,6 +278,7 @@
 			isa = PBXGroup;
 			children = (
 				FAA8F8AC27F39DE6006D0118 /* TestApiRequest.swift */,
+				FAA8F8BD27F71820006D0118 /* SingleImageDownloader.swift */,
 			);
 			path = NetworkLayer;
 			sourceTree = "<group>";
@@ -274,6 +296,7 @@
 			isa = PBXGroup;
 			children = (
 				FAA8F8B227F4C5B6006D0118 /* PostView.swift */,
+				FAA8F8BB27F7166A006D0118 /* PosViewImage.swift */,
 			);
 			path = PostView;
 			sourceTree = "<group>";
@@ -419,9 +442,14 @@
 			files = (
 				FA6CCCF827EBB6B900882A00 /* RatingView.swift in Sources */,
 				FA6CCCF227EBB43700882A00 /* CirclePhoto.swift in Sources */,
+				FA68A14327FA267900110AD5 /* SingleStorieView.swift in Sources */,
+				FA68A14127FA24F700110AD5 /* StorieCircleView.swift in Sources */,
 				FAA8F8B527F4C880006D0118 /* FastView.swift in Sources */,
 				FAA8F8B827F4D046006D0118 /* LentaView.swift in Sources */,
+				FA68A14527FA292C00110AD5 /* AddStoriesView.swift in Sources */,
+				FAA8F8BC27F7166B006D0118 /* PosViewImage.swift in Sources */,
 				FAA8F8A927F39D47006D0118 /* StoriesView.swift in Sources */,
+				FAA8F8BE27F71821006D0118 /* SingleImageDownloader.swift in Sources */,
 				FAA8F8AD27F39DE6006D0118 /* TestApiRequest.swift in Sources */,
 				FAA8F8B027F3A0A1006D0118 /* BigImages.swift in Sources */,
 				FAA8F8BA27F50DF8006D0118 /* SmallImages.swift in Sources */,

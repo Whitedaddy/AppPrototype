@@ -10,14 +10,25 @@ import SwiftUI
 struct LentaView: View {
     
     @ObservedObject var network = ImageDownloader()
+    
+    @State var page: Int = 2
 
     var body: some View {
         VStack {
-            ForEach (network.images) {text in
-                PostView(hit: text)
+            ForEach (network.bigImages.indices, id: \.self) {index in
+                let image = network.bigImages[index]
+                PostView(hit: image)
+                    .clipShape(RoundedRectangle(cornerRadius: 10))
+                    .padding()
+                    .onAppear(perform: {
+                        if index == network.bigImages.count-1 {
+                            self.page += 1
+//                            network.GetRegularImages(searh: "beautiful+nature", page: page, perPage: "10")
+                        }
+                    })
             }
         }
-        .onAppear(perform: {network.GetImages(searh: "flowers", page: 1)})
+        .onAppear(perform: {network.GetRegularImages(searh: "beautiful+nature", page: page, perPage: "10")})
     }
 }
 

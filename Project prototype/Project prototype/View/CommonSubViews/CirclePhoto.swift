@@ -20,8 +20,6 @@ struct CirclePhoto: View
     {
         ZStack
         {
-//            Circle()
-//                .fill(RadialGradient(colors: [.purple,.white], center: .center, startRadius: 0, endRadius: 100))
             avatar
                 .resizable()
                 .clipShape(Circle())
@@ -34,6 +32,6 @@ struct CirclePhoto: View
 
 struct CirclePhoto_Previews: PreviewProvider {
     static var previews: some View {
-        CirclePhoto(size: 0.1, avatar: Image(systemName: "plus.circle"), color: .purple, border: 2)
+        CirclePhoto(size: 0.1, avatar: Image(systemName: "plus.circle"), color: Color("MyPurple"), border: 2)
     }
 }

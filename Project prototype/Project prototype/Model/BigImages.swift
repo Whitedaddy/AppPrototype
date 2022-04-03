@@ -20,4 +20,5 @@ struct BigImage: Decodable, Identifiable, Hashable {
     let id: Int
     let pageURL: String
     let tags: String
+    let webformatURL: String
 }

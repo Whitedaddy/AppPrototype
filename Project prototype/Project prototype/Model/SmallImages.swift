@@ -11,11 +11,11 @@ import Foundation
 struct SmallImages: Decodable {
     var total: Int
     var totalHits: Int
-    var hits: [BigImage]
+    var hits: [SmallImage]
 }
 
 struct SmallImage: Decodable, Identifiable, Hashable {
     let id: Int
     let previewURL: String
-    let tags: String
+    let user: String
 }

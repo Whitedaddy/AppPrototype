@@ -21,13 +21,16 @@ struct PostView: View {
                     HStack {
                         CirclePhoto(size: 0.1, avatar: Image(systemName: "person.crop.circle.fill"), color: .white, border: 3)
                         Text("Понравилось \(hit.id) людям")
+                            .foregroundColor(Color.white)
                         Spacer()
                     }
                     Text(hit.tags )
-                        .padding(.top, 0)
+                        .padding(.vertical, 0)
+                        .foregroundColor(Color.white)
                 }
-                .background(RoundedRectangle(cornerRadius: 3)
-                                .fill(Color.gray.opacity(0.3)))
+                .background(RoundedRectangle(cornerRadius: 30)
+                                .fill(Color.gray.opacity(0.6))
+                                )
             }
         }
         .frame(width: Get_Width(w: 0.95), height: Get_Width(w: 1))

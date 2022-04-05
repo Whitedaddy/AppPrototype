@@ -11,24 +11,40 @@ struct LentaView: View {
     
     @ObservedObject var network = ImageDownloader()
     
-    @State var page: Int = 2
 
     var body: some View {
         VStack {
             ForEach (network.bigImages.indices, id: \.self) {index in
                 let image = network.bigImages[index]
                 PostView(hit: image)
-                    .clipShape(RoundedRectangle(cornerRadius: 10))
+                    .clipShape(RoundedRectangle(cornerRadius: 20))
                     .padding()
+            }
+            if ((network.bigImages.count - 10*network.page) == 0) {
+                ProgressView()
+                    .padding(.vertical)
                     .onAppear(perform: {
-                        if index == network.bigImages.count-1 {
-                            self.page += 1
-//                            network.GetRegularImages(searh: "beautiful+nature", page: page, perPage: "10")
+                        print("New data")
+                        if !network.bigImages.isEmpty {
+                            network.GetRegularImages(searh: "beautiful+nature", page: network.page, perPage: "10")
                         }
                     })
             }
+            else {
+                GeometryReader {reader -> Color in
+                    let minY = reader.frame(in: .global).minY
+                    let height = Get_Height(h: 0.77)
+                    
+                    if !network.bigImages.isEmpty && minY < height {
+                        print("end here")
+                        network.page += 1
+                    }
+                    return Color.clear
+                }
+                .frame(width: 5, height: 5)
+            }
         }
-        .onAppear(perform: {network.GetRegularImages(searh: "beautiful+nature", page: page, perPage: "10")})
+        .onAppear(perform: {network.GetRegularImages(searh: "beautiful+nature", page: network.page, perPage: "10")})
     }
 }
 

@@ -17,10 +17,12 @@ class ImageDownloader: ObservableObject {
     
     @Published var bigImages: [BigImage] = []
     @Published var smallImages: [SmallImage] = []
+    @Published var page: Int = 1
+
     
     func GetRegularImages (searh: String, page: Int, perPage: String)
     {
-        let apiURL = "https://pixabay.com/api/?key="+apiKey+"&q="+searh+"&page="+page+"&per_page="+perPage
+        let apiURL = "https://pixabay.com/api/?key="+apiKey+"&q="+searh+"&page="+String(page)+"&per_page="+perPage
         guard let requestUrl = URL(string: apiURL) else { return }
         var request = URLRequest(url: requestUrl)
         request.httpMethod = "GET"
@@ -38,7 +40,7 @@ class ImageDownloader: ObservableObject {
                 print("Completion: \(completion)")
             } receiveValue: { [weak self] parsedImages in
                 self?.bigImages.append(contentsOf: parsedImages.hits)
-                print(parsedImages)
+                print(parsedImages.total)
             }
             .store(in: &cancellables)
 

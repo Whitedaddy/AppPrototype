@@ -14,20 +14,22 @@ struct LentaView: View {
 
     var body: some View {
         VStack {
-            ForEach (network.bigImages.indices, id: \.self) {index in
-                let image = network.bigImages[index]
-                PostView(hit: image)
-                    .clipShape(RoundedRectangle(cornerRadius: 20))
-                    .padding()
+            if !network.bigImages.isEmpty {
+                ForEach (network.bigImages.indices, id: \.self) {index in
+                    let image = network.bigImages[index]
+                    PostView(hit: image)
+                        .clipShape(RoundedRectangle(cornerRadius: 20))
+                        .padding()
+                }
             }
-            if ((network.bigImages.count - 10*network.page) == 0) {
+            if ((network.bigImages.count == 10*network.page)) {
                 ProgressView()
                     .padding(.vertical)
                     .onAppear(perform: {
                         print("New data")
-                        if !network.bigImages.isEmpty {
-                            network.GetRegularImages(searh: "beautiful+nature", page: network.page, perPage: "10")
-                        }
+                        
+                            network.GetRegularImages(searh: "beautiful+nature", page: network.page+1, perPage: "10")
+                        
                     })
             }
             else {
@@ -44,7 +46,7 @@ struct LentaView: View {
                 .frame(width: 5, height: 5)
             }
         }
-        .onAppear(perform: {network.GetRegularImages(searh: "beautiful+nature", page: network.page, perPage: "10")})
+//        .onAppear(perform: {network.GetRegularImages(searh: "beautiful+nature", page: network.page, perPage: "10")})
     }
 }
 

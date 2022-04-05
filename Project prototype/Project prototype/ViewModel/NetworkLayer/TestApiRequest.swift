@@ -17,7 +17,7 @@ class ImageDownloader: ObservableObject {
     
     @Published var bigImages: [BigImage] = []
     @Published var smallImages: [SmallImage] = []
-    @Published var page: Int = 1
+    @Published var page: Int = 0
 
     
     func GetRegularImages (searh: String, page: Int, perPage: String)

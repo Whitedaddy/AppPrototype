@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA033EB227FE3A4D00AF226D /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA033EB127FE3A4D00AF226D /* TabView.swift */; };
 		FA1CCB4527E0F11C00F80986 /* Project_prototypeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CCB4427E0F11C00F80986 /* Project_prototypeApp.swift */; };
 		FA1CCB4727E0F11C00F80986 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CCB4627E0F11C00F80986 /* UserView.swift */; };
 		FA1CCB4927E0F12100F80986 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA1CCB4827E0F12000F80986 /* Assets.xcassets */; };
@@ -55,6 +56,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA033EB127FE3A4D00AF226D /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
 		FA1CCB4127E0F11C00F80986 /* Project prototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project prototype.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA1CCB4427E0F11C00F80986 /* Project_prototypeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project_prototypeApp.swift; sourceTree = "<group>"; };
 		FA1CCB4627E0F11C00F80986 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
@@ -113,6 +115,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA033EB027FE3A1C00AF226D /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				FA033EB127FE3A4D00AF226D /* TabView.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
 		FA1CCB3827E0F11C00F80986 = {
 			isa = PBXGroup;
 			children = (
@@ -186,6 +196,7 @@
 		FA1CCB7627E249BF00F80986 /* UserPage */ = {
 			isa = PBXGroup;
 			children = (
+				FA033EB027FE3A1C00AF226D /* MainView */,
 				FAA8F8A627F39CF9006D0118 /* UserView */,
 			);
 			path = UserPage;
@@ -450,6 +461,7 @@
 				FAA8F8BC27F7166B006D0118 /* PosViewImage.swift in Sources */,
 				FAA8F8A927F39D47006D0118 /* StoriesView.swift in Sources */,
 				FAA8F8BE27F71821006D0118 /* SingleImageDownloader.swift in Sources */,
+				FA033EB227FE3A4D00AF226D /* TabView.swift in Sources */,
 				FAA8F8AD27F39DE6006D0118 /* TestApiRequest.swift in Sources */,
 				FAA8F8B027F3A0A1006D0118 /* BigImages.swift in Sources */,
 				FAA8F8BA27F50DF8006D0118 /* SmallImages.swift in Sources */,

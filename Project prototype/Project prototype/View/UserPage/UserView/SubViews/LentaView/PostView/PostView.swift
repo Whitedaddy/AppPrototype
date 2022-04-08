@@ -22,11 +22,13 @@ struct PostView: View {
                         CirclePhoto(size: 0.1, avatar: Image(systemName: "person.crop.circle.fill"), color: .white, border: 3)
                         Text("Понравилось \(hit.id) людям")
                             .foregroundColor(Color.white)
+                            .shadow(color: Color("MyPurple"), radius: 5, x: 5, y: 5)
                         Spacer()
                     }
                     Text(hit.tags )
                         .padding(.vertical, 0)
                         .foregroundColor(Color.white)
+                        .shadow(color: Color("MyPurple"), radius: 5, x: 5, y: 5)
                 }
                 .background(RoundedRectangle(cornerRadius: 30)
                                 .fill(Color.gray.opacity(0.6))
